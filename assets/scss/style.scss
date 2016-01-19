@@ -1,10 +1,13 @@
-$azul: #6FBECF;
+$azul: #3f6083;
+$azul-claro: #008cba;
 $black: #333;
 $cinza-escuro: #6B6B6B;
 $cinza-background: #fcfcfc;
+$cinza-texto: #4d4d4d;
 
 @import "_mixins";
 @import "_navbar";
+@import "_login";
 
 html, body{
   height: 100%;
@@ -17,17 +20,17 @@ html{
 }
 
 body{
-  background-color: $cinza-background;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  
-  position: relative;
-  left: 0px;
-  overflow-x: hidden;
-  @include transition(all .5s ease);
+	color: $cinza-texto;
+	background-color: $cinza-background;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	position: relative;
+	left: 0px;
+	overflow-x: hidden;
+	@include transition(all .5s ease);
 }
 
 
@@ -62,3 +65,29 @@ ul {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+.text-small{
+	font-size: 14px;
+}
+
+input[type="text"]{
+	border-radius: 2px;
+}
+
+.btn-azul{
+	text-transform: uppercase;
+	color: #fff;
+	background-color: $azul;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	&:hover, &:focus, &:active{
+		color: #fff;
+	}
+}
+
+.blue-link{
+	color: $azul-claro;
+	text-decoration: none !important;
+	&:hover{
+		color: $azul;
+	}
+}

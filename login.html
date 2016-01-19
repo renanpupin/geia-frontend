@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,53 @@
 		<!-- STYLES -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body id="home">
 
 		<div id="main" class="body-content">
 
-			<div class="container">
-				
+			<div class="login-bg">
+				<div class="login-box">
+					<img class="login-logo" src="assets/img/login-logo.jpg">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2">
+							<form id="login">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="usuario" class="upper-label">Usuário</label>
+											<input type="text" name="usuario" id="usuario" class="form-control" required>
+										</div>
+									</div>
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="senha" class="upper-label">Senha</label>
+											<input type="password" name="senha" id="senha" class="form-control" required>
+										</div>
+									</div>
+									<div class="col-xs-12">
+										<div class="form-group">
+											<input type="checkbox" name="remember" value="false" id="remember" class="">
+											<label for="remember" class="text-small">
+												Permanecer Conectado
+											</label>
+										</div>
+									</div>
+									<div class="col-xs-12 text-right">
+										<button type="submit" id="btnLogin" class="btn btn-azul">Entrar</button>
+									</div>
+									<div class="col-xs-12 text-center">
+										<a href="#" class="blue-link">Esqueceu sua senha?</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
-			
+
 		</div>
 
 
