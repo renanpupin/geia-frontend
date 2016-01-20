@@ -19,6 +19,7 @@
 
     .navbar{
         max-width:300px;
+        width:300px;
         margin-right: 0;
         margin-left: 0;
     } 
@@ -41,8 +42,104 @@
         position: absolute;
         left: 0;
         top: 0;
+        border: none;
+        border-radius: 0px;
+        min-height: 100vh;
+        background-color: #51769d;
+        color: white;
+        // .dropdown-menu{
+        //     position: relative;
+        //     width: 100%;
+        // }
     }
     .content{
         margin-left: 300px;
     }
+}
+
+.navbar-brand{
+    width: 100%;
+    display: block;
+    background-color: #2A2A2A;
+    height: 100px;
+    &:hover, &:focus, &:active{
+        background-color: #2A2A2A !important;
+        color: #fff;
+    }
+    .profile-user{
+        padding: 10px 20px;
+        .profile-image{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: inline-block;
+            background-color: #fff;
+            vertical-align: middle;
+            img{
+                width: 100%;
+                height: auto;
+                position: relative;
+                top: 10px;
+            }
+        }
+        .profile-name{
+            color: #fff;
+            display: inline-block;
+        }
+    }
+}
+
+.menu-search{
+    background-color: #454545;
+    color: #fff;
+    border: none;
+    border-radius: 0px !important;
+    height: 35px;
+}
+.btn-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    // margin-top: 2px;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+    border: none;
+    @include user-select();
+    &:hover, &:focus, &:active{
+        background-color: transparent;
+        color: #fff;
+    }
+    i{
+        vertical-align: middle;
+    }
+}
+
+#navbar .navbar-nav.menu-links>li>a{
+    color: #fff;
+}
+
+#navbar .menu-links{
+    li{
+        a{
+            text-transform: uppercase;
+            padding: 10px 10px;
+            font-size: 14px;
+            i{
+                vertical-align: middle;
+                font-size: 22px;
+                padding: 0px 10px;
+            }
+            &:hover{
+                background-color: lighten(#51769d,5%);
+            }
+        }
+    }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
 }

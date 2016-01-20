@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Proposta Online</title>
+
+        <!-- STYLES -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body id="home">
+
+        <div id="main" class="body-content">
+            <nav id="navbar" class="navbar navbar-default" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="profile-user">
+                        <div class="profile-image">
+                            <img src="assets/img/logo_geia_adm.png">
+                        </div>
+                        <div class="profile-name">
+                            Administrador
+                        </div>
+                    </div>
+                </a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <form class="navbar-left" role="search">
+                  <div class="form-group" style="display:block; position: relative;">
+                    <input type="text" class="form-control menu-search" placeholder="PESQUISAR">
+                    <button type="submit" class="btn btn-default btn-search" id="buscaMenu">
+                        <i class="material-icons">search</i>
+                    </button>
+                  </div>
+                </form>
+                <ul class="nav navbar-nav menu-links">
+                  <li class="active"><a href="#"><i class="material-icons">attach_money</i>Comercial</a></li>
+                  <li class="active"><a href="#"><i class="material-icons">note_add</i>Cadastros</a></li>
+                  <li class="active"><a href="#"><i class="material-icons">extension</i>Parâmetros</a></li>
+                  <li class="active"><a href="#"><i class="material-icons">settings</i>Configurações</a></li>
+                  <!-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </nav>
+
+            <div class="content">
+                <div class="content-header">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="header-title">GRUPOS</div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="search-group">
+                                <input type="text" class="search-input">
+                                <button class="search-btn">
+                                    <i class="material-icons">search</i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <a href="#" class="user-actions">
+                                        <i class="material-icons">person</i>
+                                        Olá ADMIN!
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                    <a href="#" class="user-actions">
+                                        <i class="material-icons">exit_to_app</i>
+                                        SAIR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-code">
+                  <div class="content-actions">
+                    <a class="action-btn"><i class="material-icons">person</i>NOVO GRUPO</a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="table-responsive">
+                        <table id="" class="table table-stripped table-bordered table-hover">
+                          <thead>
+                            <tr>
+                              <th>Grupo ID</th>
+                              <th>Nome do Grupo</th>
+                              <th>Nível</th>
+                              <th style="with: 75px;"></th>
+                              <th style="with: 75px;"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Master</td>
+                              <td></td>
+                              <td>
+                                <a href="#" class="table-icon" title="Remover"><i class="material-icons">delete</i></a>
+                              </td>
+                              <td>
+                                <a href="#" class="table-icon" title="Visualizar"><i class="material-icons">description</i></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        <!-- SCRIPTS -->
+        <script src="assets/components/jquery/dist/jquery.min.js"></script>
+        <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

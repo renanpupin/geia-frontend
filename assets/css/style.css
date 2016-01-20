@@ -15,6 +15,7 @@
     overflow-x: visible; }
   .navbar {
     max-width: 300px;
+    width: 300px;
     margin-right: 0;
     margin-left: 0; }
   .navbar-nav, .navbar-nav > li, .navbar-left, .navbar-right, .navbar-header {
@@ -29,9 +30,85 @@
   #navbar {
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+    border: none;
+    border-radius: 0px;
+    min-height: 100vh;
+    background-color: #51769d;
+    color: white; }
   .content {
     margin-left: 300px; } }
+
+.navbar-brand {
+  width: 100%;
+  display: block;
+  background-color: #2A2A2A;
+  height: 100px; }
+  .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
+    background-color: #2A2A2A !important;
+    color: #fff; }
+  .navbar-brand .profile-user {
+    padding: 10px 20px; }
+    .navbar-brand .profile-user .profile-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+      display: inline-block;
+      background-color: #fff;
+      vertical-align: middle; }
+      .navbar-brand .profile-user .profile-image img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 10px; }
+    .navbar-brand .profile-user .profile-name {
+      color: #fff;
+      display: inline-block; }
+
+.menu-search {
+  background-color: #454545;
+  color: #fff;
+  border: none;
+  border-radius: 0px !important;
+  height: 35px; }
+
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  padding: 5px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0px;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .btn-search:hover, .btn-search:focus, .btn-search:active {
+    background-color: transparent;
+    color: #fff; }
+  .btn-search i {
+    vertical-align: middle; }
+
+#navbar .navbar-nav.menu-links > li > a {
+  color: #fff; }
+
+#navbar .menu-links li a {
+  text-transform: uppercase;
+  padding: 10px 10px;
+  font-size: 14px; }
+  #navbar .menu-links li a i {
+    vertical-align: middle;
+    font-size: 22px;
+    padding: 0px 10px; }
+  #navbar .menu-links li a:hover {
+    background-color: #5c83ab; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent; }
 
 .login-bg {
   background-image: url("/assets/img/login-bg.jpg");
@@ -137,3 +214,86 @@ input[type="text"] {
   text-decoration: none !important; }
   .blue-link:hover {
     color: #3f6083; }
+
+.content-header {
+  background-color: #51769d;
+  color: #fff;
+  padding: 15px; }
+  .content-header .header-title {
+    font-size: 24px; }
+  .content-header .search-group {
+    display: inline-block; }
+    .content-header .search-group .search-input {
+      border: none;
+      border-radius: 0px;
+      height: 30px;
+      color: #4d4d4d;
+      padding: 0px 10px; }
+    .content-header .search-group .search-btn {
+      background-color: #6d90b4;
+      color: #fff;
+      border: none;
+      height: 30px;
+      padding: 3px;
+      vertical-align: bottom;
+      margin-left: -3px;
+      outline: none; }
+  .content-header .user-actions {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none; }
+    .content-header .user-actions i {
+      vertical-align: middle;
+      font-size: 22px; }
+
+.content-code {
+  padding: 15px; }
+  .content-code .content-actions {
+    padding: 15px 0px; }
+    .content-code .content-actions .action-btn {
+      background-color: #51769d;
+      color: #fff;
+      padding: 5px 10px;
+      margin: 0px 5px;
+      font-size: 14px;
+      border-radius: 2px;
+      cursor: pointer;
+      text-decoration: none; }
+      .content-code .content-actions .action-btn:hover {
+        background-color: #5c83ab; }
+      .content-code .content-actions .action-btn i {
+        font-size: 20px;
+        margin-right: 5px;
+        vertical-align: middle; }
+  .content-code .table-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: #fff;
+    background-color: #51769d;
+    padding: 5px;
+    border-radius: 2px; }
+    .content-code .table-icon i {
+      font-size: 20px; }
+
+.btn-geia {
+  background-color: #51769d;
+  color: #fff;
+  padding: 7px 15px;
+  margin: 0px 5px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none; }
+  .btn-geia:hover {
+    background-color: #5c83ab;
+    color: #fff;
+    text-decoration: none; }
+  .btn-geia i {
+    font-size: 20px;
+    margin-right: 5px;
+    vertical-align: middle; }
+
+a.btn-geia {
+  padding-bottom: 9px; }
