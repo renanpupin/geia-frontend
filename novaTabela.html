@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proposta Online</title>
+
+    <!-- STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body id="home">
+
+    <div id="main" class="body-content">
+      <nav id="navbar" class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <div class="profile-user">
+              <div class="profile-image">
+                <img src="assets/img/logo_geia_adm.png">
+              </div>
+              <div class="profile-name">
+                Administrador
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <form class="navbar-left" role="search">
+            <div class="form-group" style="display:block; position: relative;">
+              <input type="text" class="form-control menu-search" placeholder="PESQUISAR">
+          <button type="submit" class="btn btn-default btn-search" id="buscaMenu">
+            <i class="material-icons">search</i>
+          </button>
+            </div>
+          </form>
+          <ul class="nav navbar-nav menu-links">
+              <li class="active dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="material-icons">attach_money</i>Comercial
+                  <span class="drop-icon"><i class="material-icons">keyboard_arrow_down</i></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Propostas</a></li>
+                  <li><a href="#">Clientes - P. Física</a></li>
+                  <li><a href="#">Clientes - P. Jurídica</a></li>
+                </ul>
+              </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="material-icons">note_add</i>Cadastros
+                <span class="drop-icon"><i class="material-icons">keyboard_arrow_down</i></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Entidade de Classe</a></li>
+                  <li><a href="#">Operadoras</a></li>
+                  <li><a href="#">Canais</a></li>
+                  <li><a href="#">Produtos</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="material-icons">extension</i>Parâmetros
+                <span class="drop-icon"><i class="material-icons">keyboard_arrow_down</i></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Tabela de Preço</a></li>
+                  <li><a href="#">Declarações de Saúde</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="material-icons">settings</i>Configurações
+                <span class="drop-icon"><i class="material-icons">keyboard_arrow_down</i></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Usuários</a></li>
+                  <li><a href="#">Grupos</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div class="content">
+        <div class="content-header">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <div class="header-title">NOVA TABELA DE PREÇOS</div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="search-group">
+                <input type="text" class="search-input">
+                <button class="search-btn">
+                  <i class="material-icons">search</i>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="row row-actions">
+                <div class="col-xs-offset-2 col-xs-5">
+                  <a href="#" class="user-actions">
+                    <i class="material-icons">person</i>
+                    Olá ADMIN!
+                  </a>
+                </div>
+                <div class="col-xs-5">
+                  <a href="#" class="user-actions">
+                    <i class="material-icons">exit_to_app</i>
+                    SAIR
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-code">
+                  <div class="content-actions">
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form id="" method="" action"">
+                        <div class="row">
+                          <div class="col-md-8">
+                            <div class="form-group">
+                              <label for="descricao">Descrição</label>
+                              <input type="text" class="form-control" name="descricao" id="descricao">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="canal">Canal</label>
+                              <select class="form-control" name="canal" id="canal">
+                                <option>Selecione um canal</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <label for="data_inicio">Data de Início</label>
+                              <input type="text" class="form-control" name="data_inicio" id="data_inicio">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <label for="data_termino">Data de Término</label>
+                              <input type="text" class="form-control" name="data_termino" id="data_termino">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estidade_classe">Entidade de Classe (Opcional)</label>
+                              <select class="form-control" name="estidade_classe" id="estidade_classe">
+                                <option>APEOESP</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="codigo_ans">Código ANS</label>
+                              <select class="form-control" name="codigo_ans" id="codigo_ans">
+                                <option>Estadual</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="quem_pode_aderir">Quem pode aderir</label>
+                              <textarea class="form-control" id="quem_pode_aderir" name="quem_pode_aderir"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <div class="form-group">
+                              <label for="dependentes">Dependentes</label>
+                              <input type="text" class="form-control" name="dependentes" id="dependentes">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <button type="button" id="adicionarDependente" class="btn btn-geia" style="margin-top: 25px; width: 100%;"><i class="material-icons">add</i>Adicionar</button>
+                          </div>
+                          <div class="col-md-12">
+                            <ul id="lista_dependentes">
+                              <li class="list-holder">Sem itens cadastrados</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="beneficios">Benefícios</label>
+                              <textarea class="form-control" id="beneficios" name="beneficios"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <div class="form-group">
+                              <label for="relacao_congeneres">Relação de Congeneres</label>
+                              <input type="text" class="form-control" name="relacao_congeneres" id="relacao_congeneres">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <button type="button" id="adicionarCongeneres" class="btn btn-geia" style="margin-top: 25px; width: 100%;"><i class="material-icons">add</i>Adicionar</button>
+                          </div>
+                          <div class="col-md-12">
+                            <ul id="lista_congeneres">
+                              <li class="list-holder">Sem itens cadastrados</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="carencias">Carências</label>
+                              <textarea class="form-control" id="carencias" name="carencias"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="carencias_regras">Redução de Carências - Regras</label>
+                              <textarea class="form-control" id="carencias_regras" name="carencias_regras"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="carencias_documentos">Redução de Carências - Documentos Necessários</label>
+                              <textarea class="form-control" id="carencias_documentos" name="carencias_documentos"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <div class="form-group">
+                              <label for="bancos_debito">Bancos para débito</label>
+                              <input type="text" class="form-control" name="bancos_debito" id="bancos_debito">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <button type="button" id="adicionarBancos" class="btn btn-geia" style="margin-top: 25px; width: 100%;"><i class="material-icons">add</i>Adicionar</button>
+                          </div>
+                          <div class="col-md-12">
+                            <ul id="lista_bancos">
+                              <li class="list-holder">Sem itens cadastrados</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="rede_credenciada">Rede Credenciada</label>
+                              <textarea class="form-control" id="rede_credenciada" name="rede_credenciada"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="abrangencia">Abrangência</label>
+                              <select class="form-control" name="abrangencia" id="abrangencia">
+                                <option value="estadual">Estadual</option>
+                                <option value="nacional">Nacional</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-12" id="abrangencia_estadual">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="AC"> AC</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="AL"> AL</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="AM"> AM</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="AP"> AP</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="BA"> BA</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="CE"> CE</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="DF"> DF</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="ES"> ES</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="GO"> GO</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="MA"> MA</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="MG"> MG</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="MS"> MS</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="MT"> MT</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="PA"> PA</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="PB"> PB</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="PE"> PE</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="PI"> PI</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="PR"> PR</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="RJ"> RJ</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="RN"> RN</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="RO"> RO</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="RR"> RR</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="RS"> RS</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="SC"> SC</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="SE"> SE</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="SP"> SP</label>
+                              </div>
+                              <div class="col-md-2 col-sm-4 col-xs-6">
+                                <label><input type="checkbox" name="abrangencia_estado" value="TO"> TO</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="produto">Produto</label>
+                              <select class="form-control" name="produto" id="produto">
+                                <option>Selecione um produto</option>
+                                <option value="1">Prime Class</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="pessoa">Pessoa</label>
+                              <select class="form-control" name="pessoa" id="pessoa">
+                                <option value="fisica">Física</option>
+                                <option value="juridica">Jurídica</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-right">
+                            <a href="#" class="btn-geia"><i class="material-icons">reply</i>Voltar</a>
+                            <button type="submit" class="btn-geia"><i class="material-icons">save</i>Salvar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+      </div>
+      
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="assets/components/jquery/dist/jquery.min.js"></script>
+    <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

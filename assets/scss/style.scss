@@ -207,3 +207,27 @@ input[type="text"]{
 a.btn-geia{
     padding-bottom: 9px;
 }
+
+.user-actions{
+    color: #fff;
+    &:hover, &:active, &:focus{
+        color: #fff;
+    }
+}
+
+.removerLista{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 0px 2px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    i{
+        font-size: 18px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+}
